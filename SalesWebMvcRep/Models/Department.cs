@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesWebMvcRep.Controllers
+namespace SalesWebMvcRep.Models
 {
     public class Department
     {

@@ -37,7 +37,8 @@ namespace SalesWebMvcRep
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWebMvcRepContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMvcRepContext")));
+                options.UseMySQL(Configuration.GetConnectionString("SalesWebMvcRepContext"), builder =>
+            builder.MigrationsAssembly("SalesWebMvcRep")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

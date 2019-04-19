@@ -14,6 +14,6 @@ namespace SalesWebMvcRep.Models
         {
         }
 
-        public DbSet<SalesWebMvcRep.Controllers.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
     }
 }
